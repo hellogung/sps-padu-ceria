@@ -1,0 +1,17 @@
+Landing Page sekolah paud
+Menu: Home, Profil, Guru, Prestasi, Metode Belajar, Daftarkan Anak
+Section:
+Hero Section
+Profil sekolah
+Kepala sekolah
+Guru
+Fasilitas
+Metode Pembelajaran
+Prestasi
+Kegiatan
+Daftarkan Anak Anda
+
+Layout: Header, Body, Footer
+
+Theme: Light Mode, Cheerful, nuansa anak kindergartent,
+Style: framer motion, 
