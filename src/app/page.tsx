@@ -27,7 +27,7 @@ import {
   HandHeart,
   Blocks,
   Baby,
-  PartyPopper,
+  PartyPopper, Smile, HomeIcon,
 } from "lucide-react";
 import { useRef } from "react";
 
@@ -112,9 +112,9 @@ function Header() {
           </div>
           <div>
             <h1 className="font-baloo text-2xl font-bold text-warm-brown">
-              PAUD Ceria
+              SPS Padu Ceria
             </h1>
-            <p className="text-xs text-muted-foreground">Belajar & Bermain</p>
+            <p className="text-xs text-muted-foreground">Bermain & Belajar</p>
           </div>
         </motion.a>
 
@@ -312,9 +312,9 @@ function HeroSection() {
             className="mt-12 grid grid-cols-3 gap-6"
           >
             {[
-              { number: "15+", label: "Tahun Pengalaman", icon: Award },
+              { number: "18+", label: "Tahun Pengalaman", icon: Award },
               { number: "500+", label: "Alumni Berprestasi", icon: GraduationCap },
-              { number: "20+", label: "Guru Profesional", icon: Users },
+              { number: "10+", label: "Guru Profesional", icon: Users },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -474,7 +474,7 @@ function ProfileSection() {
             Profil <span className="text-sky">Sekolah</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            Mengenal lebih dekat tentang PAUD Ceria, visi misi, dan komitmen kami
+            Mengenal lebih dekat tentang SPS Padu Ceria, visi misi, dan komitmen kami
             dalam mendidik generasi masa depan
           </p>
         </motion.div>
@@ -512,9 +512,9 @@ function ProfileSection() {
                     <Sparkles className="h-12 w-12 text-white" />
                   </div>
                   <h3 className="font-baloo text-2xl font-bold text-warm-brown">
-                    PAUD Ceria
+                    SPS Padu Ceria
                   </h3>
-                  <p className="text-muted-foreground">Est. 2010</p>
+                  <p className="text-muted-foreground">Sejak 2008</p>
                   <div className="mt-4 flex justify-center gap-2">
                     {[...Array(5)].map((_, i) => (
                       <Star
@@ -524,7 +524,7 @@ function ProfileSection() {
                     ))}
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    Terakreditasi A
+                    Terakreditasi B
                   </p>
                 </div>
               </div>
@@ -540,13 +540,13 @@ function ProfileSection() {
             >
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-mint/20">
-                  <Award className="h-6 w-6 text-mint" />
+                  <Smile className="h-6 w-6 text-mint" />
                 </div>
                 <div>
                   <p className="font-baloo font-bold text-warm-brown">
-                    Sekolah Terbaik
+                    Ayo Gabung Sekarang
                   </p>
-                  <p className="text-sm text-muted-foreground">Kota 2024</p>
+                  <p className="text-sm text-muted-foreground">Mari kita bermain sambil belajar</p>
                 </div>
               </div>
             </motion.div>
@@ -565,8 +565,8 @@ function ProfileSection() {
                 Tentang Kami
               </h3>
               <p className="leading-relaxed text-muted-foreground">
-                PAUD Ceria adalah lembaga pendidikan anak usia dini yang berdiri
-                sejak tahun 2010. Kami berkomitmen untuk memberikan pendidikan
+                SPS Padu Ceria adalah lembaga pendidikan anak usia dini yang berdiri
+                sejak tahun 2008. Kami berkomitmen untuk memberikan pendidikan
                 berkualitas dengan pendekatan bermain sambil belajar yang
                 menyenangkan. Setiap anak adalah unik, dan kami percaya bahwa
                 setiap anak memiliki potensi luar biasa yang perlu dikembangkan.
@@ -694,6 +694,7 @@ function PrincipalSection() {
                         <div className="text-center">
                           <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-lavender to-coral">
                             <Users className="h-12 w-12 text-white" />
+                          {/*  Foto */}
                           </div>
                           <p className="font-baloo text-lg font-bold text-warm-brown">
                             Foto Kepala Sekolah
@@ -725,9 +726,9 @@ function PrincipalSection() {
               <div className="p-8 md:p-12">
                 <div className="mb-6">
                   <h3 className="font-baloo text-2xl font-bold text-warm-brown md:text-3xl">
-                    Ibu Siti Nurhaliza, S.Pd., M.Pd.
+                    Ibu Dian Permanasari, S.Pd.
                   </h3>
-                  <p className="text-coral">Kepala Sekolah PAUD Ceria</p>
+                  <p className="text-coral">Kepala Sekolah SPS Padu Ceria</p>
                 </div>
 
                 <blockquote className="mb-6 border-l-4 border-sunny pl-4 italic text-muted-foreground">
@@ -736,19 +737,19 @@ function PrincipalSection() {
                 </blockquote>
 
                 <p className="mb-6 leading-relaxed text-muted-foreground">
-                  Dengan pengalaman lebih dari 20 tahun di bidang pendidikan anak
-                  usia dini, Ibu Siti telah mendedikasikan hidupnya untuk
+                  Dengan pengalaman lebih dari 18 tahun di bidang pendidikan anak
+                  usia dini, Ibu Dian telah mendedikasikan hidupnya untuk
                   menciptakan lingkungan belajar yang hangat dan menyenangkan bagi
                   setiap anak.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl bg-sunny/10 p-3 text-center">
-                    <p className="font-baloo text-2xl font-bold text-sunny">20+</p>
+                    <p className="font-baloo text-2xl font-bold text-sunny">18+</p>
                     <p className="text-sm text-muted-foreground">Tahun Pengalaman</p>
                   </div>
                   <div className="rounded-xl bg-coral/10 p-3 text-center">
-                    <p className="font-baloo text-2xl font-bold text-coral">S2</p>
+                    <p className="font-baloo text-2xl font-bold text-coral">S1</p>
                     <p className="text-sm text-muted-foreground">Pendidikan</p>
                   </div>
                 </div>
@@ -765,19 +766,25 @@ function PrincipalSection() {
 function TeachersSection() {
   const teachers = [
     {
-      name: "Ibu Ratna",
+      name: "Kakak Lala",
+      role: "Guru Kelas A",
+      specialty: "Seni & Kreativitas",
+      color: "peach",
+    },
+    {
+      name: "Ibu Lis",
       role: "Guru Kelas A",
       specialty: "Seni & Kreativitas",
       color: "coral",
     },
     {
-      name: "Ibu Dewi",
+      name: "Ibu Lina",
       role: "Guru Kelas B",
       specialty: "Bahasa & Literasi",
       color: "sky",
     },
     {
-      name: "Ibu Maya",
+      name: "Kakak Salsa",
       role: "Guru Kelas C",
       specialty: "Musik & Gerak",
       color: "mint",
@@ -793,13 +800,7 @@ function TeachersSection() {
       role: "Guru Olahraga",
       specialty: "Motorik Kasar",
       color: "lavender",
-    },
-    {
-      name: "Ibu Ani",
-      role: "Guru Seni",
-      specialty: "Seni Rupa",
-      color: "peach",
-    },
+    }
   ];
 
   const colorClasses: Record<string, { bg: string; light: string; text: string }> = {
@@ -935,13 +936,13 @@ function FacilitiesSection() {
     {
       name: "Area Bermain Indoor",
       description: "Playground indoor yang aman dengan berbagai permainan edukatif",
-      icon: Blocks,
+      icon: HomeIcon,
       color: "sunny",
     },
     {
-      name: "Taman Bermain Outdoor",
-      description: "Taman luas dengan ayunan, perosotan, dan area bermain pasir",
-      icon: TreePine,
+      name: "Mainan Bervariasi",
+      description: "Banyak jenis mainan interaktif yang dapat membantu menstimulasi anak",
+      icon: Blocks,
       color: "mint",
     },
     {
@@ -1234,7 +1235,7 @@ function AchievementsSection() {
             Prestasi <span className="text-sunny">Kami</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            Berbagai pencapaian membanggakan dari siswa-siswi PAUD Ceria
+            Berbagai pencapaian membanggakan dari siswa-siswi SPS Padu Ceria
           </p>
         </motion.div>
 
@@ -1439,7 +1440,7 @@ function RegistrationSection() {
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
             Berikan yang terbaik untuk si kecil. Bergabunglah dengan keluarga
-            besar PAUD Ceria dan saksikan anak Anda tumbuh cerdas dan bahagia!
+            besar SPS Padu Ceria dan saksikan anak Anda tumbuh cerdas dan bahagia!
           </p>
 
           {/* Benefits */}
@@ -1481,7 +1482,8 @@ function RegistrationSection() {
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <motion.a
-              href="#"
+              href="https://wa.me/6281218116188?text=Saya mau daftarkan anak saya ummi. (pesan dikirim dari website)"
+              target={"_blank"}
               className="btn-bounce group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-coral to-peach px-10 py-5 text-xl font-bold text-white shadow-xl shadow-coral/30"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -1491,7 +1493,7 @@ function RegistrationSection() {
               <ChevronRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
             </motion.a>
             <motion.a
-              href="#"
+              href="https://wa.me/6281218116188?text=Assalaamu'alaikum. Saya mau tanya-tanya ummi terkait SPS Padu Ceria (pesan dikirim dari website)"
               className="btn-bounce inline-flex items-center justify-center gap-2 rounded-full border-2 border-sunny bg-white px-8 py-5 text-lg font-bold text-warm-brown shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -1511,11 +1513,11 @@ function RegistrationSection() {
           >
             <span className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-coral" />
-              (021) 123-4567
+              +62 812-1811-6188
             </span>
             <span className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-coral" />
-              info@paudceria.sch.id
+              spspaduceria@gmail.com
             </span>
           </motion.div>
         </motion.div>
@@ -1537,8 +1539,8 @@ function Footer() {
                 <Sparkles className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h3 className="font-baloo text-2xl font-bold">PAUD Ceria</h3>
-                <p className="text-sm text-white/70">Belajar & Bermain</p>
+                <h3 className="font-baloo text-2xl font-bold">SPS Padu Ceria</h3>
+                <p className="text-sm text-white/70">Bermain & Belajar</p>
               </div>
             </div>
             <p className="mb-6 max-w-md text-white/80">
@@ -1588,21 +1590,21 @@ function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 shrink-0 text-coral" />
                 <span className="text-white/80">
-                  Jl. Pendidikan No. 123, Kelurahan Ceria, Kota Bahagia
+                  Taman Griya Kencana, Jl. Delima X, Kencana, Tanah Sareal, Kota Bogor
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-coral" />
-                <span className="text-white/80">(021) 123-4567</span>
+                <span className="text-white/80">+62 812-1811-6188</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-coral" />
-                <span className="text-white/80">info@paudceria.sch.id</span>
+                <span className="text-white/80">spspaduceria@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-coral" />
                 <span className="text-white/80">
-                  Senin - Jumat: 07.00 - 14.00
+                  Senin - Jumat: 08.00 - 12.00
                 </span>
               </li>
             </ul>
@@ -1613,7 +1615,7 @@ function Footer() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-white/60">
-              © 2026 PAUD Ceria. All rights reserved.
+              © 2026 SPS Padu Ceria. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-sm text-white/60">
               <span>Made with</span>
@@ -1624,6 +1626,7 @@ function Footer() {
                 <Heart className="h-4 w-4 fill-coral text-coral" />
               </motion.div>
               <span>untuk anak Indonesia</span>
+              <a href={"https://hellogung.growww.site"}>- dibuat oleh hellogung</a>
             </div>
           </div>
         </div>
